@@ -1,0 +1,260 @@
+/* Universal style */
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 53.33rem;
+  margin: 0 auto;
+}
+
+/* Main Banner */
+
+.img {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.img .container {
+  height: 30rem;
+}
+
+/*header*/
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  font-family: Helvetica;
+  color: white;
+  position: relative;
+  top: 1rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.logo span, li {
+  font-size: 1rem;
+}
+
+.navbar li {
+  display: inline;
+  list-style-type: none;
+  padding: 1rem 2rem 1rem 0;
+}
+
+/* middle header of background */
+
+.look  {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.look p{
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+
+/* page services */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  height: 8rem;
+  width: 55%;
+  margin: 3rem auto;
+}
+
+.icons img {
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.icons p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+.ruler img, .truck img {
+  width: 5rem;
+}
+
+/* page info */
+
+.info {
+  display: flex;
+}
+
+.phil, .appt {
+  width: 35%;
+}
+
+.info h3 {
+  display: block;
+  width: 10rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+}
+
+.phil {
+  margin-right: 12%;
+}
+
+/*footer*/
+
+.copy {
+  display: flex;
+  background-color: azure;
+  padding: 4rem;
+}
+
+.copy img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+nav p {
+  display: none;
+}
+
+/* tablet media query*/
+
+@media only screen and (max-width: 1260px ) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .img {
+    height: 22rem;
+  }
+
+  .head {
+    top: 0;
+}
+
+  .look {
+    margin: 5rem 2rem;
+  }
+
+  .look h1{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+  nav p {
+    display: none;
+  }
+
+}
+
+/* cell phone query */
+
+@media only screen and (max-width: 660px) {
+  .navbar ul {
+    display: none;
+  }
+
+
+  .img {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .look {
+    display: block;
+    width: 100%;
+    margin: 9rem 0 0 0;
+  }
+
+  .look p {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar p {
+    display: flex;
+    padding-right: 1rem;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: auto;
+    width: 55%;
+    padding: 3.77rem auto;
+  }
+
+    .icons img {
+      padding: 1.54rem auto;
+    }
+
+    .icons p {
+      font-size: 0.77rem;
+      font-family: Helvetica;
+    }
+
+    .info {
+      flex-direction: column;
+    }
+
+    .info div, .info h3 {
+      width: 100%;
+    }
+
+    .info h3 {
+      text-align: center;
+    }
+
+
+    .info p {
+      padding-top: 1rem;
+      font-family: Helvetica;
+      font-size: 0.77rem;
+    }
+
+    .copy span {
+      display: none;
+    }
+
+    .copy img {
+      margin: auto;
+    }
+}
